@@ -18,9 +18,13 @@ public class Bike extends Vehicle {
 
     /**
     * Read Only Property.
+    *
+    * @param speedInput speed
+    * @param maxSpeedInput maxspeed
     */
-    public Bike() {
-        super(0, 0);
+    public Bike(int speedInput,
+                   int maxSpeedInput) {
+        super(speedInput, maxSpeedInput);
     }
 
     /**
@@ -35,7 +39,7 @@ public class Bike extends Vehicle {
     /**
     * Setting Cadence.
     *
-    * @param setCadence set
+    * @param cadenceAdd set
     */
     public void setCadence(final int cadenceAdd) {
         this.cadence = cadenceAdd;
@@ -49,7 +53,7 @@ public class Bike extends Vehicle {
     /**
     * Ring Bell.
     *
-    * @param ringBell set
+    * @param ringBellAdd set
     */
     public void ringBell(final String ringBellAdd) {
         if ("y".equals(ringBellAdd)) {

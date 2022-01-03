@@ -19,9 +19,13 @@ public class Truck extends Vehicle {
 
     /**
     * Read Only Property.
+    *
+    * @param speedInput speed
+    * @param maxSpeedInput maxspeed
     */
-    public Truck(int a, int b) {
-        super(a, b);
+    public Truck(int speedInput,
+                   int maxSpeedInput) {
+        super(speedInput, maxSpeedInput);
     }
 
     /**
@@ -41,12 +45,12 @@ public class Truck extends Vehicle {
     */
     public String getLicense() {
         return this.licenseNumber;
-    } 
+    }
 
     /**
     * Add stack.
     *
-    * @param speedAdd add
+    * @param provideAirInput add
     */
     public void provideAir(final int provideAirInput) {
         super.brake(provideAirInput * 2);
