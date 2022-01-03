@@ -10,11 +10,18 @@
 /**
 * This is the standard "Bike" program.
 */
-public class Bike {
+public class Bike extends Vehicle {
     /**
     * Cadence.
     */
     private int cadence;
+
+    /**
+    * Read Only Property.
+    */
+    public Bike() {
+        super(0, 0);
+    }
 
     /**
     * Getting cadence.
@@ -32,6 +39,11 @@ public class Bike {
     */
     public void setCadence(final int cadenceAdd) {
         this.cadence = cadenceAdd;
+        if (this.cadence > 0) {
+            accelerate(this.cadence);
+        } else if (this.cadence < 0) {
+            brake(this.cadence);
+        }
     }
 
     /**

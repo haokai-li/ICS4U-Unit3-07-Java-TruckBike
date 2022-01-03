@@ -20,8 +20,8 @@ public class Truck extends Vehicle {
     /**
     * Read Only Property.
     */
-    public Truck() {
-        super()
+    public Truck(int a, int b) {
+        super(a, b);
     }
 
     /**
@@ -31,7 +31,7 @@ public class Truck extends Vehicle {
     *
     */
     public void setLicense(final String licenseNumberInput) {
-        licenseNumber = licenseNumberInput;
+        this.licenseNumber = licenseNumberInput;
     }
 
     /**
@@ -39,7 +39,7 @@ public class Truck extends Vehicle {
     *
     * @return getLicense
     */
-    public void getLicense() {
+    public String getLicense() {
         return this.licenseNumber;
     } 
 
@@ -49,7 +49,7 @@ public class Truck extends Vehicle {
     * @param speedAdd add
     */
     public void provideAir(final int provideAirInput) {
-        super.accelerate(provideAirInput * 2);
+        super.brake(provideAirInput * 2);
     }
 }
 

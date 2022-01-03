@@ -30,8 +30,8 @@ public class Vehicle {
     * @param speedInput speed
     * @param maxSpeedInput maxspeed
     */
-    public Vehicle(final int speedInput,
-                   final int maxSpeedInput) {
+    public Vehicle(int speedInput,
+                   int maxSpeedInput) {
         this.speed = speedInput;
         this.maxSpeed = maxSpeedInput;
     }
@@ -43,7 +43,7 @@ public class Vehicle {
     *
     */
     public void setColour(final String colourInput) {
-        colour = colourInput;
+        this.colour = colourInput;
     }
 
     /**
@@ -51,7 +51,7 @@ public class Vehicle {
     *
     * @return getColour
     */
-    public int getColour() {
+    public String getColour() {
         return this.colour;
     }
 
@@ -70,7 +70,7 @@ public class Vehicle {
     * @return getMaxSpeed
     */
     public int getMaxSpeed() {
-        return this.maxSpeedspeed;
+        return this.maxSpeed;
     }
 
     /**

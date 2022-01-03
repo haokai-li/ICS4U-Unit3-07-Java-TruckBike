@@ -52,40 +52,36 @@ final class Main {
     * @param args No args will be used
     */
     public static void main(final String[] args) {
-        final Truck aStack1 = new Truck(ZERO, TWOOO);
-        final Scanner userInput1 = new Scanner(System.in);
+        Truck aStack1 = new Truck(TWOOO, TWOOO);
+        Scanner userInput1 = new Scanner(System.in);
 
         System.out.print(
-            "Please enter the License plate number of first car: "
+            "Please enter the License plate number of the truck: "
         );
-        final String licensePlateNumber = userInput1.nextLine();
-        System.out.print(
-            "Please enter the Colour of first car: "
-        );
-        final String color = userInput1.nextLine();
-        aStack1.push(color);
-        aStack1.license(licensePlateNumber);
-        aStack1.showLicense();
-        aStack1.showStack();
+        String licensePlateNumber = userInput1.nextLine();
+        aStack1.setLicense(licensePlateNumber);
 
         System.out.print(
-            "Please enter the Accelerate of first car: "
+            "Please enter the Colour of the truck: "
         );
-        final int accelerateNumber = userInput1.nextInt();
-        aStack1.accelerate(accelerateNumber);
-        aStack1.showStack();
+        String color = userInput1.nextLine();
+        aStack1.setColour(color);
+
+        System.out.println("\n"
+                           + "license Plate Number: " + aStack1.getLicense()
+                           + "\n"
+                           + "Colour: " + aStack1.getColour()
+                           + "\n"
+                           + "Speed: " + aStack1.getSpeed()
+                           + "\n"
+                           + "Max Speed: " + aStack1.getMaxSpeed()
+                           + "\n");
 
         System.out.print(
-            "Please enter the Brake of first car: "
+            "Please enter the Provide Air of the truck: "
         );
-        final int brakeNumber = userInput1.nextInt();
-        aStack1.brake(brakeNumber);
-        aStack1.showStack();
-
-        System.out.print(
-            "Please enter the provide air of first car: "
-        );
-        final int air = userInput1.nextInt();
-        aStack1.provideair(air);
+        final int provideAirNumber = userInput1.nextInt();
+        aStack1.provideAir(provideAirNumber);
+        System.out.println("Speed:" + aStack1.getSpeed() + "\n");
     }
 }
