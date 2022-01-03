@@ -23,8 +23,8 @@ public class Truck extends Vehicle {
     * @param speedInput speed
     * @param maxSpeedInput maxspeed
     */
-    public Truck(int speedInput,
-                   int maxSpeedInput) {
+    public Truck(final int speedInput,
+                 final int maxSpeedInput) {
         super(speedInput, maxSpeedInput);
     }
 

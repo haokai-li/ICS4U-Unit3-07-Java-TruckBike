@@ -22,8 +22,8 @@ public class Bike extends Vehicle {
     * @param speedInput speed
     * @param maxSpeedInput maxspeed
     */
-    public Bike(int speedInput,
-                   int maxSpeedInput) {
+    public Bike(final int speedInput,
+                final int maxSpeedInput) {
         super(speedInput, maxSpeedInput);
     }
 

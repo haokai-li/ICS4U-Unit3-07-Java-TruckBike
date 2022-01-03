@@ -30,8 +30,8 @@ public class Vehicle {
     * @param speedInput speed
     * @param maxSpeedInput maxspeed
     */
-    public Vehicle(int speedInput,
-                   int maxSpeedInput) {
+    public Vehicle(final int speedInput,
+                   final int maxSpeedInput) {
         this.speed = speedInput;
         this.maxSpeed = maxSpeedInput;
     }
