@@ -80,16 +80,17 @@ final class Main {
         aStack1.provideAir(provideAirNumber);
         System.out.println("Speed:" + aStack1.getSpeed() + SPARE);
 
-        final Scanner userInput2 = new Scanner(System.in);
+        final Scanner userInputInt2 = new Scanner(System.in);
+        final Scanner userInputString2 = new Scanner(System.in);
         final Bike aStack2 = new Bike(ZERO, TWOOO);
 
         System.out.print("Please enter the cadence of the bike : ");
-        final int cadence = userInput2.nextInt();
+        final int cadence = userInputInt2.nextInt();
         aStack2.setCadence(cadence);
 
         System.out.print("Please enter the Colour of the bike: ");
 
-        final String color2 = userInput2.nextLine();
+        final String color2 = userInputString2.nextLine();
 
         aStack2.setColour(color2);
 
@@ -106,7 +107,7 @@ final class Main {
         System.out.print(
             "Please enter the ring Bicycle bell of the bike(y/n): "
         );
-        final String ring = userInput2.nextLine();
+        final String ring = userInputString2.nextLine();
         aStack2.ringBell(ring);
         System.out.println("\nDone.");
     }
